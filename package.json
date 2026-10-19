@@ -1,0 +1,31 @@
+{
+	"name": "cronspiracy",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@8.15.9",
+	"engines": {
+		"node": ">=22.13"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"start": "node server.js",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"test": "vitest run"
+	},
+	"devDependencies": {
+		"@fontsource/vt323": "^5.3.0",
+		"@sveltejs/adapter-node": "5.5.7",
+		"@sveltejs/kit": "2.70.3",
+		"@sveltejs/vite-plugin-svelte": "6.2.4",
+		"@types/node": "^24.0.0",
+		"svelte": "5.57.2",
+		"svelte-check": "4.7.7",
+		"typescript": "5.9.3",
+		"vite": "7.3.7",
+		"vitest": "^4.1.12",
+		"zod": "^4.6.7"
+	}
+}

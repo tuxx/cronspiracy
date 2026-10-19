@@ -1,0 +1,13 @@
+services:
+  cronspiracy:
+    build: .
+    # image: ghcr.io/<you>/cronspiracy:latest
+    restart: unless-stopped
+    ports:
+      - "1337:3000"
+    environment:
+      PUBLIC_URL: http://localhost:1337
+      # TRUSTED_PROXIES: cloudflare,private   # behind Cloudflare + a local reverse proxy
+      # CREATE_PASSWORD: change-me            # only people with the password can create polls
+    volumes:
+      - ./data:/data
